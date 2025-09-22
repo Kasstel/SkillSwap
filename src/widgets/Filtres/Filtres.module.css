@@ -1,0 +1,128 @@
+.container {
+  font-family: var(--font-jost, sans-serif);
+  font-weight: 500;
+  padding: 20px;
+  background-color: var(--input-bg, #ffffff);
+  border-radius: 20px;
+  width: 324px;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mainTitle {
+  font-size: 24px;
+  margin: 0;
+  color: var(--text-primary, #253017);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filtersCount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resetButton {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  padding: 4px 8px;
+  color: var(--text-link, #508826);
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.resetButton:hover {
+  opacity: 0.8;
+}
+
+.resetButton:focus {
+  outline: none;
+}
+
+.closeIcon {
+  width: 24px;
+  height: 24px;
+  filter: invert(48%) sepia(89%) saturate(376%) hue-rotate(44deg)
+    brightness(95%) contrast(91%);
+}
+
+.filterSection {
+  margin: 24px 0;
+}
+
+.filterTitle {
+  font-family: var(--font-jost, sans-serif);
+  margin-bottom: 12px;
+  font-size: 20px;
+  color: var(--text-primary, #253017);
+}
+
+.citiesList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.toggleButton {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.toggleButton:focus {
+  outline: none;
+}
+
+.toggleText {
+  margin-right: 8px;
+  color: var(--text-link, #508826);
+  font-weight: 400;
+}
+
+.chevronIcon {
+  width: 24px;
+  height: 24px;
+  margin-top: 3px;
+  transition: transform 0.2s;
+}
+
+.skillCategory {
+  margin-bottom: 12px;
+}
+
+.skillCategoryHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.subcategories {
+  margin-left: 24px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.subcategoryCheckbox {
+  margin-left: 8px;
+}

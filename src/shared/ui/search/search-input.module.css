@@ -1,0 +1,58 @@
+.wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 527px;
+  max-width: 648px;
+  height: 48px;
+  background: var(--card-bg, #ffffff);
+  padding: 12px;
+  border-radius: 12px;
+  justify-content: space-between;
+}
+
+.inputWrapper {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-primary, #253017);
+  caret-color: var(--button-pressed, #508826);
+  font-family: var(--font-roboto-regular, sans-serif);
+}
+
+.input::placeholder {
+  color: var(--text-caption, #69735d);
+  font-size: 16px;
+  line-height: 24px;
+  font-family: var(--font-roboto-regular, sans-serif);
+}
+
+.input:focus::placeholder {
+  color: transparent;
+}
+
+.button {
+  display: flex;
+  background: transparent;
+  border: none;
+}
+
+input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+}

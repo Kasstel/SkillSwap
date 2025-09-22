@@ -1,0 +1,25 @@
+.headerCardUserBigText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.headerTitle {
+  font-family: var(--font-jost, "Jost");
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.011em;
+  color: var(--text-primary, #253017);
+}
+
+.headerWarning {
+  font-family: var(--font-roboto-regular, "Roboto-Regular");
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--text-primary, #253017);
+}

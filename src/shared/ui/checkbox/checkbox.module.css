@@ -1,0 +1,70 @@
+.checkbox {
+  font-family: var(--font-roboto-regular, sans-serif);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.checkbox input[type="checkbox"] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox_icon {
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  transition: all 0.3s ease;
+}
+
+.checkbox_icon::before,
+.checkbox_icon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: all 0.3s ease;
+}
+
+.checkbox_icon::before {
+  opacity: 1;
+  background-image: url("@assets/icons/checkbox-empty.svg");
+}
+
+.checkbox_icon::after {
+  opacity: 0;
+  background-image: url("@assets/icons/checkbox-done.svg");
+}
+
+.checkbox_remove .checkbox_icon::after {
+  background-image: url("@assets/icons/checkbox-remove.svg");
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox_icon::before {
+  opacity: 0;
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox_icon::after {
+  opacity: 1;
+}
+
+.checkbox_label {
+  color: var(--text-primary, #253017);
+  transition: color 0.3s ease;
+  cursor: pointer;
+}

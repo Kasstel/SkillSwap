@@ -1,0 +1,28 @@
+.gridSkillInfo {
+  display: grid;
+  grid-template-columns: 1fr 3.2fr;
+  gap: 24px;
+  padding: 32px 0 60px;
+}
+
+.headerIcons {
+  display: flex;
+  justify-content: end;
+  gap: 16px;
+}
+
+.iconButton {
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconButton svg {
+  fill: var(--text-primary, #253017);
+}

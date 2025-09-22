@@ -1,0 +1,55 @@
+.container {
+  border-radius: 12px;
+  height: 46px;
+  width: 208px;
+  border: 1px solid var(--text-caption, #69735d);
+}
+
+.container .ant-picker-input {
+  font-size: 16px;
+  font-family: var(--font-roboto-regular);
+}
+
+.container:hover {
+  border-color: #69735d;
+}
+
+.container:focus-within {
+  border-color: #69735d;
+}
+
+.ant-picker-dropdown .ant-picker-panel-container {
+  border: 1px solid #69735d;
+  border-radius: 12px;
+}
+
+.ant-picker-cell-today .ant-picker-cell-inner::before {
+  display: none;
+}
+
+.ant-picker-cell-today .ant-picker-cell-inner {
+  background-color: #abd27a;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.ant-picker-date-panel .ant-picker-content th {
+  color: #508826;
+}
+
+.helperText.errorText {
+  color: rgba(191, 57, 32, 1);
+  font-size: 12px;
+  line-height: 16px;
+  font-family: var(--font-roboto-regular, sans-serif);
+}
+
+.error {
+  border: 1px solid rgba(191, 57, 32, 1);
+}

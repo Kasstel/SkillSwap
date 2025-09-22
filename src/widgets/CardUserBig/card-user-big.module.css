@@ -1,0 +1,76 @@
+.ContainerWithButton {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: break-word;
+  flex: 1;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.title {
+  font-size: 32px;
+  line-height: 40px;
+  font-family: var(--font-jost, sans-serif);
+  color: var(--text-primary, #253017);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+.skills {
+  padding-top: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-caption, #69735d);
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  font-family: var(--font-roboto-regular, sans-serif);
+}
+
+.description {
+  padding-top: 20px;
+  padding-bottom: 28px;
+  font-family: var(--font-roboto-regular, sans-serif);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  color: var(--text-primary, #253017);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: var(--card-bg, #ffffff);
+  padding: 32px 52px;
+  border-radius: 12px;
+  gap: 24px;
+}
+
+.contentContainer {
+  display: flex;
+  grid-column: 2 / 5;
+  justify-content: space-between;
+}
+/*заглушка*/
+.containerPhoto {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  max-width: 440px;
+  height: 324px;
+}
+.photo {
+  width: 440px;
+  height: 324px;
+  aspect-ratio: 1 / 1;
+  background-color: #253017;
+}
+
+.buttonWrapper {
+  margin-top: auto;
+  width: 100%;
+}

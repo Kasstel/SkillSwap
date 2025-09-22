@@ -1,0 +1,33 @@
+.skill_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  max-width: 1020px;
+  grid-auto-flow: column;
+  width: 100%;
+}
+
+.list__header {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-roboto-regular, sans-serif);
+  margin-bottom: 32px;
+  grid-column: 1/-1;
+}
+
+.header__title {
+  letter-spacing: -0.01em;
+  line-height: 125%;
+  font-size: 32px;
+  font-family: var(--font-jost, sans-serif);
+  font-weight: 500;
+  color: var(--text-primary, #253017);
+}
+
+.cards_container {
+  max-width: 100%;
+  grid-column: 1/-1;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: row;
+}

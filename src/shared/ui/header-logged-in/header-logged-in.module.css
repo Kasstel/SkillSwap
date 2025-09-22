@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  gap: 24px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.button {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.icon {
+  inline-size: 24px;
+  aspect-ratio: 1 / 1;
+}
+
+.link {
+  inline-size: 24px;
+  block-size: 24px;
+}
+
+.userInfoButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.userName {
+  color: var(--text-primary, #253017);
+  font-family: var(--font-roboto-regular, "Roboto-Regular");
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.userAvatar {
+  border-radius: 50%;
+  object-fit: cover;
+  inline-size: 48px;
+  aspect-ratio: 1 / 1;
+}

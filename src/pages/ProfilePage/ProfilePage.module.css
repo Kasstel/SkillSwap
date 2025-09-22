@@ -1,0 +1,15 @@
+.profile_page__wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile_page__container {
+  display: flex;
+  gap: 24px;
+  max-width: 1368px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  flex: 1;
+}

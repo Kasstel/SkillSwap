@@ -1,0 +1,32 @@
+.skill_list__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.favourites_empty_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+  background-color: #fff;
+  border-radius: 12px;
+  height: stretch;
+  padding: 40px;
+  gap: 30px;
+}
+
+.empty_message {
+  text-align: center;
+  text-wrap: wrap;
+  font-family: var(--font-jost);
+  font-size: 30px;
+  color: var(--text-caption);
+}
+
+.empty_favourites_icon {
+  height: 300px;
+  justify-items: center;
+  margin: 0 auto;
+}
+

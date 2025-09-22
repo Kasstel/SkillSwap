@@ -1,0 +1,98 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 45px;
+  max-width: 324px;
+  border-radius: 12px;
+  padding: 20px;
+  color: var(--text-primary, #253017);
+  font-family: var(--font-roboto-regular, sans-serif);
+  font-weight: 400;
+  font-style: normal;
+  background: var(--card-bg, #ffffff);
+}
+
+.card__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.card__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+
+.card__user_name_title {
+  font-family: var(--font-roboto-regular, sans-serif);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.22px;
+}
+
+.card__user_description {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.24px;
+}
+
+.card__skills {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+}
+
+.card__skills_title {
+  font-weight: 500;
+  line-height: 24px;
+  font-family: var(--font-roboto-medium, sans-serif);
+  font-size: 16px;
+  font-style: normal;
+  letter-spacing: 0.32px;
+}
+
+.card__skills_list {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 4px;
+  width: 100%;
+}
+
+.card__like_button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  border: none;
+  padding: 0;
+  background: transparent url("@assets/icons/like.svg") no-repeat;
+  background-size: 24px 24px;
+  cursor: pointer;
+}
+
+.card__like_button .liked {
+  background: transparent url("@assets/icons/likeFill.svg") no-repeat;
+}
+
+.card__allSkills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 45px;
+}

@@ -1,0 +1,53 @@
+.footer {
+  display: grid;
+  background: var(--card-bg, #ffffff);
+  padding: 32px 36px;
+  grid-template-columns: 350px 1fr;
+  grid-template-rows: auto auto auto;
+  margin: 0 auto;
+  font-family: var(--font-roboto-regular, sans-serif);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  width: 100%;
+}
+
+.logo {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo img {
+  height: 40px;
+  width: 159px;
+}
+
+.links {
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-auto-flow: column;
+  gap: 12px 24px;
+  justify-items: start;
+  padding-top: 21px;
+}
+.links a {
+  text-decoration: none;
+  color: var(--text-primary, #253017);
+  transition: color 0.3s;
+}
+
+.copy {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  font-size: 12px;
+  color: var(--text-caption, #69735d);
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 25px;
+}

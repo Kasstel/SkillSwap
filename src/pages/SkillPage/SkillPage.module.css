@@ -1,0 +1,15 @@
+.skillPage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--background-main, #f9faf7);
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  padding: 36px 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}

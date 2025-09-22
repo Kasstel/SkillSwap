@@ -1,0 +1,37 @@
+.container {
+  color: var(--text-primary, #253017);
+}
+
+.title {
+  margin: 0 0 20px 0;
+  font-family: var(--font-jost, sans-serif);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: start;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 12px;
+}
+
+.label {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 8px;
+  font-family: var(--font-roboto-regular, sans-serif);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.input {
+  accent-color: var(--text-link, #508826);
+  inline-size: 20px;
+  aspect-ratio: 1 / 1;
+}

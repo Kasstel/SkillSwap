@@ -1,0 +1,51 @@
+.notFoundPage {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--background-main, #f9faf7);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  width: 460px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.errorLabel {
+  font-family: var(--font-jost, sans-serif);
+  font-weight: 500;
+}
+
+.errorText {
+  font-family: var(--font-roboto-regular, sans-serif);
+  font-size: 16px;
+  display: flex;
+}
+
+.textWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.customButton {
+  width: 150px;
+}
+
+.button {
+  font-family: var(--font-roboto-regular, sans-serif);
+}

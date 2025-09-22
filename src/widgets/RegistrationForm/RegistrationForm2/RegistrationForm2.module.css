@@ -1,0 +1,139 @@
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.stepIndicatorContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.formContainer,
+.descriptionContainer {
+  width: 556px;
+  padding: 40px 60px;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.avatarContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.avatarLabel {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.avatarImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.datePickerContainer {
+  position: relative;
+}
+
+.datePickerContainer .ant-picker {
+  width: 266px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  font-size: 16px;
+  color: var(--text-primary);
+  font-family: var(--font-roboto-regular), sans-serif;
+}
+
+.errorText {
+  color: var(--error);
+  font-size: 12px;
+  font-family: var(--font-roboto-regular), sans-serif;
+}
+
+.buttonsContainer {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.backButton {
+  flex: 1;
+}
+
+.submitButton {
+  flex: 1;
+}
+
+.descriptionContainer {
+  padding: 132px 60px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+}
+
+.textContainer {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: var(--font-jost), sans-serif;
+  color: ar(--text-primary);
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--font-roboto-regular), sans-serif;
+  color: var(--text-primary);
+  padding: 0 20px;
+}

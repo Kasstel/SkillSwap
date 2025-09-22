@@ -1,0 +1,14 @@
+.cards_container {
+  /* Только так, если не менять стили у SkillList */
+  /* 1. Убираем максимальную ширину у следующего элемента после div */
+  & > * {
+    max-width: none !important;
+  }
+  /* 2. Переопределяем grid у вложенного элемента */
+  & > * > * {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+  /* 3. Общие стили для контейнера */
+  width: 100%;
+  display: block;
+}

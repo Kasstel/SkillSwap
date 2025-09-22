@@ -1,0 +1,40 @@
+{
+	"categories": [
+		{
+			"id": "1",
+			"name": "Бизнес и карьера",
+			"color": "var(--tag-business)",
+			"icon": "briefcase"
+		},
+		{
+			"id": "2",
+			"name": "Творчество и искусство",
+			"color": "var(--tag-creative)",
+			"icon": "palette"
+		},
+		{
+			"id": "3",
+			"name": "Иностранные языки",
+			"color": "var(--tag-languages)",
+			"icon": "global"
+		},
+		{
+			"id": "4",
+			"name": "Образование и развитие",
+			"color": "var(--tag-education)",
+			"icon": "book"
+		},
+		{
+			"id": "5",
+			"name": "Дом и уют",
+			"color": "var(--tag-home)",
+			"icon": "home"
+		},
+		{
+			"id": "6",
+			"name": "Здоровье и лайфстайл",
+			"color": "var(--tag-health)",
+			"icon": "lifestyle"
+		}
+	]
+}

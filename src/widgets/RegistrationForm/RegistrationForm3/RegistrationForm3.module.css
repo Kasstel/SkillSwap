@@ -1,0 +1,131 @@
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.stepIndicatorContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.formContainer,
+.descriptionContainer {
+  width: 556px;
+  padding: 121.5px 60px;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.socialButton {
+  width: 436px;
+  border: 1px solid var(--text-caption);
+  border-radius: 12px;
+  justify-content: center;
+}
+
+.socialButtonContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.socialIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0;
+  color: var(--text-primary);
+  font-weight: 400;
+  font-family: var(--font-roboto-regular), sans-serif;
+  font-size: 16px;
+}
+
+.separatorLine {
+  flex: 1;
+  height: 1px;
+  background-color: var(--disabled);
+}
+
+.submitButton {
+  width: 436px;
+  margin-top: 16px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 40px;
+}
+
+.textContainer {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 500;
+  font-family: var(--font-jost), sans-serif;
+  color: var(--text-primary);
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--font-roboto-regular), sans-serif;
+  color: var(--text-primary);
+  padding: 0 9px;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.errorText {
+  color: rgba(191, 57, 32, 1);
+  font-size: 12px;
+  line-height: 16px;
+  font-family: var(--font-roboto-regular, sans-serif);
+}
+
+.label {
+  font-size: 16px;
+  font-family: var(--font-roboto-regular, sans-serif);
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 436px;
+  position: relative;
+}

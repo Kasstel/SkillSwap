@@ -1,0 +1,16 @@
+.tag {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 12px;
+  outline: none;
+  color: var(--text-primary, #253017);
+  font-family: var(--font-roboto-regular, sans-serif);
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 16px;
+  text-align: center;
+}

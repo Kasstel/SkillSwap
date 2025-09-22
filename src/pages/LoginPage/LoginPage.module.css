@@ -1,0 +1,38 @@
+.body {
+  background-color: #f9faf7;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  padding: 20px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.closeButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: transparent;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.content {
+  padding: 20px 0;
+}

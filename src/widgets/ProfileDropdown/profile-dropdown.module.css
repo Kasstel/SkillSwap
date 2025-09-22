@@ -1,0 +1,81 @@
+.dropdown {
+  position: absolute;
+  top: calc(100% + 20px);
+  right: 0;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  width: 260px;
+  max-height: 152px;
+  border: 1px solid var(--toggle);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  color: var(--text-primary);
+  font-family: var(--font-roboto-medium);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  background: #fff;
+}
+
+.logoutButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  border: none;
+  padding: 0;
+  color: var(--text-primary);
+  font-family: var(--font-roboto-medium);
+  font-weight: 500;
+  line-height: 24px;
+  background: var(--card-bg);
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+}
+
+.logoutButton:hover {
+  opacity: 0.7;
+}
+
+.logoutIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+.link {
+  color: var(--text-primary);
+  font-family: var(--font-roboto-medium);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.link:hover {
+  opacity: 0.7;
+}

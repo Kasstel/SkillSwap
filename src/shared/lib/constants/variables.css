@@ -1,0 +1,104 @@
+:root {
+  /* ======= Шрифты ======= */
+
+  --font-jost: "Jost";
+  --font-roboto-regular: "Roboto-Regular";
+  --font-roboto-medium: "Roboto-Medium";
+
+  /* ======= Основные цвета текста ======= */
+
+  --text-primary: #253017; /* Основной текст */
+  --text-primary-rgb: 37, 48, 23; /* RGB */
+  --text-primary-hsl: 86deg 35% 14%; /* HSL */
+
+  --text-caption: #69735d; /* Подписи */
+  --text-caption-rgb: 105, 115, 93;
+  --text-caption-hsl: 87deg 11% 41%;
+
+  --text-disabled: #9ca197; /* Неактивный текст */
+  --text-disabled-rgb: 156, 161, 151;
+  --text-disabled-hsl: 90deg 5% 61%;
+
+  --text-black: #000000;
+  --modal-overlay-color: #8e8e8e99;
+
+  /* ======= Кнопки и интерактив ======= */
+
+  --toggle: #b2b9a9; /* Переключатель */
+  --toggle-rgb: 178, 185, 169;
+  --toggle-hsl: 86deg 10% 69%;
+
+  --disabled: #e4e8df; /* Неактивный */
+  --disabled-rgb: 228, 232, 223;
+  --disabled-hsl: 87deg 16% 89%;
+
+  --text-link: #508826; /* Цвет текстовых ссылок */
+  --text-link-rgb: 80, 136, 38;
+  --text-link-hsl: 94deg 56% 34%;
+
+  --button-pressed: #508826; /* Нажатая кнопка */
+  --button-pressed-rgb: 80, 136, 38;
+  --button-pressed-hsl: 94deg 56% 34%;
+
+  --button-hover: #deebc5; /* Ховер кнопки */
+  --button-hover-rgb: 222, 235, 197;
+  --button-hover-hsl: 81deg 49% 85%;
+
+  /* ======= Фоны и карточки ======= */
+
+  --card-bg: #ffffff; /* Фон карточек */
+  --card-bg-rgb: 255, 255, 255;
+  --card-bg-hsl: 0deg 0% 100%;
+
+  --input-bg: #ffffff; /* Фон полей ввода */
+  --input-bg-rgb: 255, 255, 255;
+  --input-bg-hsl: 0deg 0% 100%;
+
+  --background-main: #f9faf7; /* Основной фон */
+  --background-main-rgb: 249, 250, 247;
+  --background-main-hsl: 80deg 23% 97%;
+
+  /* ======= Акценты и статусы ======= */
+
+  --accent: #abd27a; /* Акцентный цвет */
+  --accent-rgb: 171, 210, 122;
+  --accent-hsl: 87deg 49% 65%;
+
+  --alarm: #e0796e; /* Тревога */
+  --alarm-rgb: 224, 121, 110;
+  --alarm-hsl: 6deg 65% 65%;
+
+  --error: #bf3920; /* Ошибка */
+  --error-rgb: 191, 57, 32;
+  --error-hsl: 9deg 71% 44%;
+
+  /* ======= ТЕГИ ======= */
+
+  --tag-business: #eee7f7; /* Бизнес и карьера */
+  --tag-business-rgb: 238, 231, 247;
+  --tag-business-hsl: 266deg 50% 94%;
+
+  --tag-creative: #f7e7f2; /* Творчество и искусство */
+  --tag-creative-rgb: 247, 231, 242;
+  --tag-creative-hsl: 319deg 50% 94%;
+
+  --tag-languages: #ebe5c5; /* Иностранные языки */
+  --tag-languages-rgb: 235, 229, 197;
+  --tag-languages-hsl: 51deg 49% 85%;
+
+  --tag-education: #e7f2f6; /* Образование и развитие */
+  --tag-education-rgb: 231, 242, 246;
+  --tag-education-hsl: 196deg 45% 94%;
+
+  --tag-home: #f7ebe5; /* Дом и уют */
+  --tag-home-rgb: 247, 235, 229;
+  --tag-home-hsl: 20deg 53% 93%;
+
+  --tag-health: #e9f7e7; /* Здоровье и lifestyle */
+  --tag-health-rgb: 233, 247, 231;
+  --tag-health-hsl: 113deg 50% 94%;
+
+  --tag-new: #e8ecf7; /* Новый тег? */
+  --tag-new-rgb: 232, 236, 247;
+  --tag-new-hsl: 224deg 48% 94%;
+}
