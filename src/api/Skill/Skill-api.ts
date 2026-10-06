@@ -16,10 +16,10 @@ export const fetchSkillsData = async (): Promise<Skill[]> => {
   try {
     const [categoriesRes, subcategoriesRes, skillsRes, usersRes] =
       await Promise.all([
-        fetch("/db/skills_categories.json").then((res) => res.json()),
-        fetch("/db/skills_subcategories.json").then((res) => res.json()),
-        fetch("/db/skills.json").then((res) => res.json()),
-        fetch("/db/users.json").then((res) => res.json()),
+        fetch("db/skills_categories.json").then((res) => res.json()),
+        fetch("db/skills_subcategories.json").then((res) => res.json()),
+        fetch("db/skills.json").then((res) => res.json()),
+        fetch("db/users.json").then((res) => res.json()),
       ]);
 
     return (skillsRes.skills || []).map((skill: FetchedSkill) => {

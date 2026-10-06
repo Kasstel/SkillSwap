@@ -29,8 +29,8 @@ export const CategoryDisplay = () => {
     const loadData = async () => {
       try {
         const [skillsRes, subcategoriesRes] = await Promise.all([
-          fetch("/db/skills_categories.json"),
-          fetch("/db/skills_subcategories.json"),
+          fetch("db/skills_categories.json"),
+          fetch("db/skills_subcategories.json"),
         ]);
 
         if (!skillsRes.ok || !subcategoriesRes.ok) {
@@ -49,7 +49,7 @@ export const CategoryDisplay = () => {
               name: category.name,
               color: category.color,
               icon: new URL(
-                `/src/assets/icons/${category.icon}.svg`,
+                `../../assets/icons/${category.icon}.svg`,
                 import.meta.url,
               ).href,
             };

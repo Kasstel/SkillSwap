@@ -12,10 +12,10 @@ export const fetchUsersData = async (): Promise<User[]> => {
   try {
     const [citiesRes, subcategoriesRes, categoriesRes, usersRes] =
       await Promise.all([
-        fetch("/db/cities.json").then((res) => res.json()),
-        fetch("/db/skills_subcategories.json").then((res) => res.json()),
-        fetch("/db/skills_categories.json").then((res) => res.json()),
-        fetch("/db/users.json").then((res) => res.json()),
+        fetch("db/cities.json").then((res) => res.json()),
+        fetch("db/skills_subcategories.json").then((res) => res.json()),
+        fetch("db/skills_categories.json").then((res) => res.json()),
+        fetch("db/users.json").then((res) => res.json()),
       ]);
 
     return (usersRes.users || []).map((user: FetchedUser) => {

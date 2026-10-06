@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Google from "@assets/icons/google.svg?react";
 import Apple from "@assets/icons/apple.svg?react";
 import lightIcon from "@assets/images/light-bulb.svg";
@@ -146,7 +147,7 @@ export const RegistrationStep1: React.FC<RegistrationStep1Props> = ({
 
             {mode === "login" && (
               <div className={styles.bottomLink}>
-                <a href="/reg">Зарегистрироваться</a>
+                <Link to="/reg">Зарегистрироваться</Link>
               </div>
             )}
           </form>

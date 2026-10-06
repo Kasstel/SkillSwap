@@ -23,8 +23,8 @@ export let isCategoriesLoaded = false;
 export const initializeCategories = async (): Promise<boolean> => {
   try {
     const [skillsRes, subcategoriesRes] = await Promise.all([
-      fetch("/db/skills_categories.json"),
-      fetch("/db/skills_subcategories.json"),
+      fetch("db/skills_categories.json"),
+      fetch("db/skills_subcategories.json"),
     ]);
 
     const skillsData = await skillsRes.json();
@@ -35,7 +35,7 @@ export const initializeCategories = async (): Promise<boolean> => {
         id: String(category.id),
         name: category.name,
         color: category.color,
-        icon: new URL(`/src/assets/icons/${category.icon}.svg`, import.meta.url)
+        icon: new URL(`../../../assets/icons/${category.icon}.svg`, import.meta.url)
           .href,
       };
 
