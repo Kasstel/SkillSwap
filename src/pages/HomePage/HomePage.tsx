@@ -75,10 +75,6 @@ export const HomePage = () => {
     setFilters((prev) => ({ ...prev, skills }));
   }, []);
 
-  const handleDetailsClick = useCallback((userId: string) => {
-    console.log("Подробнее о пользователе:", userId);
-  }, []);
-
   const skillsUsers = useMemo(() => skills.skills, []);
 
   const skillNamesBySubId = useMemo(() => {
@@ -224,11 +220,7 @@ export const HomePage = () => {
                 ) : (
                   <div className={styles.usersGrid}>
                     {listToRender.map((user) => (
-                      <MemoizedUserCard
-                        key={user.id}
-                        user={user}
-                        onButtonClick={handleDetailsClick}
-                      />
+                      <MemoizedUserCard key={user.id} user={user} />
                     ))}
                   </div>
                 )}

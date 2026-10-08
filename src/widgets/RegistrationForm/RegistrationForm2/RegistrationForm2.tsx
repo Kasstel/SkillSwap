@@ -143,7 +143,7 @@ export const RegistrationStep2: React.FC<RegistrationStep2Props> = ({
     }
   };
 
-  const validateField = (name: string, value: any) => {
+  const validateField = (name: keyof FormErrors, value: string | string[]) => {
     const currentData = {
       name,
       birthDate: birthDate ? birthDate.getTime() : 0,
@@ -158,7 +158,7 @@ export const RegistrationStep2: React.FC<RegistrationStep2Props> = ({
     });
     setErrors((prev) => ({
       ...prev,
-      [name]: newErrors[name as keyof FormErrors],
+      [name]: newErrors[name],
     }));
   };
 

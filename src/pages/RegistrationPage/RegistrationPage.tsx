@@ -72,7 +72,7 @@ const validateUserData = (data: {
   email: string;
   name: string;
   password: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }): boolean => {
   return !!data.email && !!data.name && !!data.password;
 };

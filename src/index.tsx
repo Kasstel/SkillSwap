@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./app/fonts/fonts.module.css";
+import "./app/fonts/fonts.css";
 import "./app/global.css";
 import App from "./app/App.tsx";
 import { HashRouter } from "react-router-dom";

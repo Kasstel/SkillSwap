@@ -137,7 +137,6 @@ export const ProfileInfo: FC = () => {
       try {
         const changeAvatar = await convertFileToBase64(newAvatar);
         setData("avatar", changeAvatar); // Обновляем аватар
-        console.log("Аватар успешно изменен");
       } catch (error) {
         console.error("Ошибка при преобразовании файла в base64:", error);
       }
@@ -148,10 +147,9 @@ export const ProfileInfo: FC = () => {
     e.preventDefault();
     try {
       updateUserInStorage(formValue);
-      console.log("Данные пользователя успешно сохранены в localStorage");
       setIsDisabledButton(true);
     } catch (error) {
-      console.log("Ошибка при сохранении данных в localStorage:", error);
+      console.error("Ошибка при сохранении данных в localStorage:", error);
     }
   };
 

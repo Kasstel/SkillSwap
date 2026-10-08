@@ -18,6 +18,7 @@ import {
   getAuth,
   getLikedSkills,
   toggleLikedSkillsInStorage,
+  type SwapRequest,
 } from "@shared/lib/utils/getDataFromLocalStorage";
 import { useLocation, useNavigate } from "react-router-dom";
 import isEqual from "lodash/isEqual";
@@ -47,12 +48,12 @@ export const SkillInfo: FC<SkillInfoProps> = ({ user, skill }) => {
     const req = JSON.parse(reqString);
     const hasSwap = req.some(
       //проверяем, был ли уже предложен обмен
-      (item: any) =>
+      (item: SwapRequest) =>
         isEqual(item.skillForSwap, skill) &&
         isEqual(item.userForSwap.id, user.id)
     );
     setExchangeOffered(hasSwap);
-  }, []);
+  }, [skill, user.id]);
 
   const handleOfferClick = () => {
     const isAuth = getAuth();
