@@ -5,7 +5,7 @@ import { DatePicker } from "@shared/ui/date-picker/date-picker";
 import { Dropdown } from "@shared/ui/dropdown/dropdown";
 import { StepIndicator } from "@shared/ui/stepIndicator/stepIndicator";
 import userIcon from "@assets/images/user info.svg";
-import iconAdd from "@assets/icons/Icon+Add.svg";
+import iconAdd from "@assets/icons/icon+add.svg";
 import styles from "./RegistrationForm2.module.css";
 import {
   genderOptions,
