@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import {
   getLikedSkills,
   toggleLikedSkillsInStorage,
+  type SwapRequest,
 } from "@shared/lib/utils/getDataFromLocalStorage";
 import { getAgeWithDeclension } from "@shared/lib/utils/ageDeclension";
 import isEqual from "lodash/isEqual";
@@ -34,10 +35,10 @@ export const UserCard: FC<UserCardProps> = ({
     const req = JSON.parse(reqString);
     const hasSwap = req.some(
       //проверяем, был ли уже предложен обмен
-      (item: any) => isEqual(item.userForSwap.id, user.id),
+      (item: SwapRequest) => isEqual(item.userForSwap.id, user.id),
     );
     setIsHasSwap(hasSwap);
-  }, []);
+  }, [user.id]);
 
   const handleDetailsClick = () => {
     if (onButtonClick) {

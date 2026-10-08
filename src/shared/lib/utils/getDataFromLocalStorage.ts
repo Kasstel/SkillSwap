@@ -7,13 +7,12 @@ export const getUserFromLocalStorage = (): UserInLocalStorage | null => {
   try {
     const userJSON = localStorage.getItem("user") as string;
     if (!userJSON) {
-      console.log("Нет данных пользователя в localStorage");
       return null;
     }
     const parsedUser: UserInLocalStorage = JSON.parse(userJSON);
     return parsedUser;
   } catch (error) {
-    console.log("Ошибка при парсинге пользователя из localStorage:", error);
+    console.error("Ошибка при парсинге пользователя из localStorage:", error);
     return null;
   }
 };
@@ -34,7 +33,7 @@ export const getLikedSkills = (): string[] | null => {
     const parsedLikedSkills = JSON.parse(likedSkillsJSON);
     return parsedLikedSkills;
   } catch (error) {
-    console.log(
+    console.error(
       "Ошибка при парсинге лайков пользователя из localStorage:",
       error,
     );
@@ -51,21 +50,28 @@ export const toggleLikedSkillsInStorage = (skillId: string): void => {
       result.push(skillId);
     } else {
       const indexLike = likedSkills.indexOf(skillId);
-      indexLike !== -1
-        ? likedSkills.splice(indexLike, 1)
-        : likedSkills.push(skillId);
+      if (indexLike !== -1) {
+        likedSkills.splice(indexLike, 1);
+      } else {
+        likedSkills.push(skillId);
+      }
       result = likedSkills;
     }
     localStorage.setItem("likedSkills", JSON.stringify(result));
     EventEmitterWrapper.publish(EventType.updateLikedUser, result);
   } catch (error) {
-    console.log("Ошибка при переключении лайка", error);
+    console.error("Ошибка при переключении лайка", error);
   }
 };
 
 export const getAuth = () => {
   const isAuth = localStorage.getItem("isAuthenticated");
   return isAuth;
+};
+
+export type SwapRequest = {
+  userForSwap: User;
+  skillForSwap: UserSkill;
 };
 
 export const addRequestSwap = (
