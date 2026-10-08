@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import React, { useState } from "react";
+import { useState } from "react";
 import { RegistrationStep1 } from "@widgets/RegistrationForm/RegistrationForm1/RegistrationForm1.tsx";
 import styles from "../RegistrationPage/RegistrationForm.module.css";
 import logo from "@assets/images/logo.svg";
