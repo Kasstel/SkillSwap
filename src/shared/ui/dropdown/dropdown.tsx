@@ -118,7 +118,6 @@ export const Dropdown: React.FC<DropdownProps> = ({
             if (!isOpen) {
               setIsOpen(true);
               if (selectedValues.length > 0) {
-                console.log(getDisplayText());
                 setSearchQuery(getDisplayText());
               }
             }
