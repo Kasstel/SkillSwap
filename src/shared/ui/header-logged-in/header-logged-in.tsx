@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import notification from "@assets/icons/notification.svg";
 import like from "@assets/icons/like.svg";
 import defaultUserIcon from "@assets/icons/default-user-icon.png";
-import theme from "@assets/icons/moon.svg";
 import styles from "./header-logged-in.module.css";
 
 type Props = {
@@ -20,9 +19,6 @@ export const HeaderLoggedIn: React.FC<Props> = ({
   return (
     <div className={styles.container}>
       <div className={styles.icons}>
-        <button type="button" className={styles.button}>
-          <img src={theme} alt="Тема." className={styles.icon} />
-        </button>
         <button type="button" className={styles.button}>
           <img src={notification} alt="Уведомления." className={styles.icon} />
         </button>

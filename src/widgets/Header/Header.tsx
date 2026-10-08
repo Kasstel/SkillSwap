@@ -1,6 +1,5 @@
 import styles from "./Header.module.css";
 import logo from "@assets/images/logo.svg";
-import topic from "@assets/icons/moon.svg";
 import ChevronDown from "@assets/icons/chevron-down.svg?react";
 import ChevronUp from "@assets/icons/chevron-up.svg?react";
 import { SearchInputUI } from "@shared/ui/search";
@@ -105,22 +104,14 @@ export const AppHeaderUI: FC<AppHeaderUIProps> = ({
             />
           </div>
         ) : (
-          <>
-            <div className={styles.topic}>
-              <button title="Темная тема" className={styles.topicButton}>
-                <img src={topic} alt="Тема" className={styles.icon} />
-              </button>
-            </div>
-
-            <div className={styles.buttonsWrapper}>
-              <NavLink to="/login">
-                <Button type="secondary">Войти</Button>
-              </NavLink>
-              <NavLink to="/reg">
-                <Button type="primary">Зарегистрироваться</Button>
-              </NavLink>
-            </div>
-          </>
+          <div className={styles.buttonsWrapper}>
+            <NavLink to="/login">
+              <Button type="secondary">Войти</Button>
+            </NavLink>
+            <NavLink to="/reg">
+              <Button type="primary">Зарегистрироваться</Button>
+            </NavLink>
+          </div>
         )}
       </nav>
     </header>
