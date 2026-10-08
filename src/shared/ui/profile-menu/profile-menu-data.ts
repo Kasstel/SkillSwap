@@ -13,6 +13,7 @@ export const ProfileMenuItems: IProfileMenuItem[] = [
   {
     id: "idea",
     title: "Мои навыки",
+    path: "/profile/skills",
     icon: idea,
   },
   {
