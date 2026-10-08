@@ -24,8 +24,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      # vite build без tsc -b: в проекте есть ошибки типов, которые блокируют npm run build
-      - run: npx vite build
+      - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
