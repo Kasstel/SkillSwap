@@ -10,6 +10,7 @@ import { SkillPage } from "./../pages/SkillPage/SkillPage.tsx";
 import { ProfilePage } from "./../pages/ProfilePage/ProfilePage.tsx";
 import { ProfileFavourites } from "@widgets/Profile/profile-favourites.tsx";
 import { ProfileInfo } from "@widgets/Profile/profile-info.tsx";
+import { ProfileSkills } from "@widgets/Profile/profile-skills.tsx";
 import { usePreviousUrl } from "../shared/hooks/usePreviousUrl";
 import { RegistrationSuccessModal } from "@widgets/RegistrationSuccess/RegistrationSuccessModal.tsx";
 
@@ -53,6 +54,7 @@ function App() {
         >
           <Route index element={<ProfileInfo />} />
           <Route path="favourites" element={<ProfileFavourites />} />
+          <Route path="skills" element={<ProfileSkills />} />
         </Route>
       </Routes>
       {background && (
