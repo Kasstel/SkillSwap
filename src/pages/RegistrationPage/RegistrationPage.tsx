@@ -14,6 +14,7 @@ import logo from "@assets/images/logo.svg";
 import Cross from "@assets/icons/cross.svg?react";
 import styles from "./RegistrationForm.module.css";
 import { Button } from "@shared/ui/button/button";
+import { Loader } from "@shared/ui/loader/loader";
 import { convertFileToBase64 } from "@shared/lib/utils/convertFileToBase64";
 import { RegistrationStep4 } from "@widgets/RegistrationForm/RegistrationForm4/RegistrationForm4.tsx";
 
@@ -180,7 +181,7 @@ export const RegistrationPage = () => {
 
       <div className={styles.content}>
         {isLoading ? (
-          <div className={styles.loader}>Загрузка...</div>
+          <Loader />
         ) : (
           <>
             {step === 1 && (

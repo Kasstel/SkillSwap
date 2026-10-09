@@ -9,6 +9,7 @@ import skillListStyles from "../../widgets/SkillList/skill-list.module.css";
 import type { User } from "@entities/User/types.ts";
 import { fetchUsersData } from "@api/User/User-api.ts";
 import { Button } from "@shared/ui/button/button";
+import { Loader } from "@shared/ui/loader/loader";
 import SortIcon from "@assets/icons/sort.svg?react";
 import skills from "@public/db/skills.json";
 import { sortUsersByCreatedAt } from "@shared/lib/utils/sortedUsersByDate";
@@ -175,7 +176,7 @@ export const HomePage = () => {
   };
 
   if (loading) {
-    return <div className={styles.loading}>Загрузка данных...</div>;
+    return <Loader fullPage />;
   }
 
   return (

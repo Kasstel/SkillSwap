@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "./SkillsPanel.module.css";
 import "../../shared/lib/constants/variables.css";
+import { Loader } from "../../shared/ui/loader/loader";
 import type {
   Category,
   Subcategory,
@@ -82,7 +83,7 @@ export const CategoryDisplay = () => {
     loadData();
   }, []);
 
-  if (loading) return <div className={styles.loading}>Загрузка...</div>;
+  if (loading) return <Loader size={32} />;
   if (error) return <div className={styles.error}>Ошибка: {error}</div>;
 
   return (

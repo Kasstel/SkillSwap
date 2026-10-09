@@ -9,6 +9,7 @@ import styles from "./SkillPage.module.css";
 import { Footer } from "@widgets/Footer/Footer";
 import type { UserSkill } from "../../entities/Skill/SkillType";
 import { SkillInfo } from "@widgets/SkillInfo/SkillInfo";
+import { Loader } from "@shared/ui/loader/loader";
 
 export const SkillPage = () => {
   const { userId } = useParams(); // Получаем ID из URL
@@ -47,7 +48,7 @@ export const SkillPage = () => {
     setLoading(true);
   }, [userId]);
 
-  if (loading) return <div>Загрузка...</div>;
+  if (loading) return <Loader fullPage />;
   if (!currentUser) return <div>Пользователь не найден</div>;
 
   return (

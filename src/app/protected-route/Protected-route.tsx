@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { Loader } from "@shared/ui/loader/loader";
 
 interface ProtectedRouteProps {
   onlyUnAuth?: boolean;
@@ -33,7 +34,7 @@ export const ProtectedRoute: React.FC<ProtectedRouteProps> = ({
   }, [isAuthenticated, isLoading, navigate, location, onlyUnAuth]);
 
   if (isLoading) {
-    return <div>Загрузка данных...</div>;
+    return <Loader fullPage />;
   }
 
   if ((onlyUnAuth && !isAuthenticated) || (!onlyUnAuth && isAuthenticated)) {
