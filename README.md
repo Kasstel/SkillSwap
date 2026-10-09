@@ -5,7 +5,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)](https://vitejs.dev/)
 
-Ссылка на командный репозиторий: https://github.com/PM-YandexPracticum/SkillSwap_34_1
+Ссылка на сайт: https://kasstel.github.io/SkillSwap/
 
 ## О проекте
 
